@@ -1,0 +1,30 @@
+<html>
+<script LANGUAGE="JavaScript">
+        function getParams() {
+                var id = document.URL.indexOf('?');
+                var params = new Array();
+                if (id != -1) {
+                        var pairs = document.URL.substring(id + 1, document.URL.length).split('&');
+                        console.log("pairs>>>>>",pairs)
+                        for (var i = 0; i < pairs.length; i++) {
+                                nameVal = pairs[i].split('=');
+                                params[nameVal[0]] = nameVal[1];
+                        }
+                }
+                return params;
+        }
+        params = getParams();
+        StudentName = unescape(params["StudentName"]);
+        Address = unescape(params["Address"]);
+        Email = unescape(params["Email"]);
+        Gender = unescape(params["Gender"]);
+        PinCode = unescape(params["Pincode"]);
+        document.write("StudentName = " + StudentName + "<br>");
+        document.write("Gender = " + Gender + "<br>");
+        document.write("Address = " + Address + "<br>");
+        document.write("Email = " + Email + "<br>");
+        document.write("pincode = " + PinCode + "<br>");
+//document.write("age = " + age + "<br>");
+</script>
+
+</html>

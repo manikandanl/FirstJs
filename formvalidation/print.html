@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./reg.css">
+    <script src="./reg.js"></script>
+    <!-- <script src="./get.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <form name="mani" type=get onsubmit="vali()">
+    
+    <table align="center" style="width: 800px;">
+        <h1 align="center"><u>StudentRegisterForm</u></h1>
+        <tr>
+            <div align="center">
+                <td>StudentName:</td>
+                <td><input type=text name=StudentName size=30 placeholder="Enter your Name"></td>
+            </div>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type=text name=Address size=30 placeholder="Enter your Address"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type=text name=Email size=30 placeholder="Enter Your email Address"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type=text name=gender size=30 placeholder="Enter Your Gender">
+        </tr>
+        <tr>
+            <td>Pincode:</td>
+            <td><input type=text name=Pincode size=30></td>
+        </tr>
+        <!-- <tr>
+            <td>Address:</td>
+            <td><input type=text name=address size=10></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><input type=text name=city size=10></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><input type=text name=state size=10></td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td><input type=text name=country size=10></td>
+        </tr> -->
+        <!-- <tr>
+            <td colspan=2><input type=submit value="Submit">
+            </td>
+        </tr> -->
+        <tr>
+            <td colspan=2><input type=button onclick="vali()" value="Submit">
+            </td>
+            <td colspan=2><input type=button onclick="openNewFile()" value="Move to Next Page">
+            </td>
+        </tr>
+
+
+    </table>
+
+
+</form>
+</body>
+
+</html>
